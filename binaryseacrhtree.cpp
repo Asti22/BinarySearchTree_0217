@@ -150,9 +150,14 @@ int main(
             x.postorder(x.ROOT);
             break;
         }
-        case '5':{
+        case '5':
             return 0;
+        defautl:
+        {
+            cout <<"Invalid option"<<endl;
+            break;
         }
+        
 
 
 
