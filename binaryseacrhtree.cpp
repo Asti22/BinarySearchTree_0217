@@ -36,5 +36,9 @@ public:
        search(element, parent, currentNode); //locate the node which will be the parent of the node to be insert
       
       if (parent == nullptr) //if the is the null (tree is empety)
+      {
+        ROOT = newNode; //if the parent node as root
+        return; //exit
+      }
      }
 };
