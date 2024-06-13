@@ -40,5 +40,9 @@ public:
         ROOT = newNode; //if the parent node as root
         return; //exit
       }
+      if (element < parent->info) //if the vaue in the data field of the new node is less than that of the parent
+      {
+        parent->leftchild =newNode;
+      }
      }
 };
