@@ -72,5 +72,11 @@ public:
             cout <<"Tree is empety"<<endl;
             return;
         }
+        if (ptr !=NULL)
+        {
+            inorder(ptr->leftchild);
+            cout <<ptr->info <<" ";
+            inorder(ptr->rightchild);
+        }
      }
 };
