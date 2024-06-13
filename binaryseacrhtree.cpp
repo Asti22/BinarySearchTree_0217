@@ -50,7 +50,7 @@ public:
       }
      }
 
-     void seacrh(string element, Node*&parent, Node*&currentNode)
+     void search(string element, Node*&parent, Node*&currentNode)
      {
         //this function seacrh the currentNode of the spesified node as well as the current  node of its parent
         currentNode = ROOT;
@@ -77,6 +77,36 @@ public:
             inorder(ptr->leftchild);
             cout <<ptr->info <<" ";
             inorder(ptr->rightchild);
+        }
+     }
+
+      void preorder(Node*ptr)
+     {
+        if (ROOT == NULL)
+        {
+            cout <<"Tree is empety"<<endl;
+            return;
+        }
+        if (ptr !=NULL)
+        {
+            cout <<ptr->info <<" ";
+            preorder(ptr->leftchild);
+            preorder (ptr->rightchild );
+        }
+     }
+      void postorder(Node*ptr)
+     {
+        if (ROOT == NULL)
+        {
+            cout <<"Tree is empety"<<endl;
+            return;
+        }
+        if (ptr !=NULL)
+        {
+            
+            postorder(ptr->leftchild);
+          postorder (ptr->rightchild );
+            cout <<ptr->info <<" ";
         }
      }
 };
