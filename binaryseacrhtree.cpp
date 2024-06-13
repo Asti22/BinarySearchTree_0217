@@ -49,4 +49,15 @@ public:
         parent->rightchild =newNode; //maake the right child on the parentpoint to the newnode
       }
      }
+
+     void seacrh(string element, Node*&parent, Node*&currentNode)
+     {
+        //this function seacrh the currentNode of the spesified node as well as the current  node of its parent
+        currentNode = ROOT;
+        parent = NULL;
+        while ((currentNode !=NULL)&&(currentNode->info != element))
+        {
+            
+        }
+     }
 };
